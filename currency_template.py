@@ -26,7 +26,7 @@ class CurrencyConverter:
     def convert_to_yen(self):
         try:
             euro = float(self.entry_euro.get())
-            yen = euro * 145  # Beispiel-Wechselkurs: 1 Euro = 145 Yen
+            yen = euro * 145   
             self.label_result.config(text=f"Ergebnis in Yen: {yen:.2f}")
         except ValueError:
             self.label_result.config(text="Bitte eine gültige Zahl eingeben!")
